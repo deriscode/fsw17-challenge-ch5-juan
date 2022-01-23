@@ -1,0 +1,17 @@
+{
+	"name": "fsw17-challenge-ch5-juan",
+	"version": "1.0.0",
+	"description": "Binar FSW-17 Challenge Chapter 5 - Juan",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"author": "Juan (deriscode)",
+	"license": "ISC",
+	"dependencies": {
+		"ejs": "^3.1.6",
+		"express": "^4.17.2",
+		"uuid": "^8.3.2"
+	}
+}
