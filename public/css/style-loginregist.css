@@ -11,16 +11,6 @@ a {
 	text-decoration: none;
 }
 
-.login-regist-footer {
-	font-size: 0.75rem;
-	margin-top: 3.5em;
-	padding: 1em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #632652;
-}
-
 /* Start Login-Container */
 .login-container {
 	height: 100vh;
@@ -31,14 +21,14 @@ a {
 
 /* Start Login-Regist Form */
 
-input.form-control {
+.login-regist-form input.form-control {
 	color: #632652;
 	font-weight: bold;
 	border: 1px solid #632652 !important;
 	border-radius: 5px;
 }
 
-input.form-control:focus {
+.login-regist-form .form-control:focus {
 	border-color: #632652 !important;
 	box-shadow: 0.3rem 0.3rem 0 0.1rem rgb(99, 38, 82, 25%) !important;
 	color: #632652;
@@ -109,3 +99,17 @@ input.form-control:focus {
 }
 
 /* End Login-Regist Form */
+
+/* Start Footer */
+
+.login-regist-footer {
+	font-size: 0.75rem;
+	margin-top: 3.5em;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #632652;
+}
+
+/* End Footer */
