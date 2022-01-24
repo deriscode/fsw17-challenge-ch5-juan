@@ -1,0 +1,98 @@
+/* Resolusi Tablet */
+@media (min-width: 767.98px) {
+	/* Start Game-Header */
+
+	.game-header h1 {
+		font-size: 36px;
+	}
+
+	/* End Game-Header */
+
+	/* Start Game-Content */
+
+	.game-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.game-content__username {
+		font-size: 36px;
+	}
+
+	.game-content__images {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.game-content__image {
+		width: 93%;
+		height: 70%;
+		padding: 30px;
+		margin: auto;
+	}
+
+	.game-content__image img {
+		max-width: 150px;
+		max-height: 150px;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+
+	.game-content__sign {
+		margin: auto;
+	}
+
+	.game-content__sign h1 {
+		font-size: 85px;
+	}
+
+	.game-content__sign h1:nth-child(2),
+	.game-content__sign h1:nth-child(3),
+	.game-content__sign h1:nth-child(4) {
+		font-size: 38px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.game-content__refresh {
+		margin: auto;
+		grid-column: 1 / span 3;
+	}
+
+	/* End Game-Content */
+}
+
+/* Resolusi Laptop Kecil */
+@media (min-width: 991.98px) {
+	/* Start Game-Content */
+
+	.game-content {
+		padding: 0 2rem;
+	}
+
+	/* End Game-Content */
+}
+
+/* Resolusi Laptop Sedang */
+@media (min-width: 1199.98px) {
+	/* Start Game-Content */
+
+	.game-content__sign h1 {
+		font-size: 144px;
+	}
+
+	/* End Game-Content */
+}
+
+/* Resolusi Laptop Besar */
+@media (min-width: 1439.98px) {
+	/* Start Game-Content */
+
+	.game-content {
+		padding: 0 10rem;
+	}
+
+	/* End Game-Content */
+}

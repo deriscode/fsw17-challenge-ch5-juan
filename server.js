@@ -1,10 +1,22 @@
+const path = require("path");
+
 const express = require("express");
 const app = express();
 
+app.set("view engine", "ejs");
+app.set("views", "./views");
+app.use(express.static(__dirname + "/public"));
+
+app.get("/game", (req, res) => {
+	res.render("game.ejs", { headTitle: "Game" });
+});
+
+app.get("/login", (req, res) => {
+	res.render("login.ejs", { headTitle: "Login" });
+});
+
 app.get("/", (req, res) => {
-	res.send(
-		"<iframe width='560' height='315' src='https://www.youtube.com/embed/4FIQpVyJ1jo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
-	);
+	res.render("main.ejs", { headTitle: "Home" });
 });
 
 const PORT = 7000;

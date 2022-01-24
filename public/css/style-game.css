@@ -1,0 +1,143 @@
+/* Import Font Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #9c835f;
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Start Game-Header */
+
+.game-header {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.game-header a {
+	text-decoration: none;
+	font-size: 72px;
+	font-weight: bold;
+	color: #724c21;
+}
+
+.game-header img {
+	margin: 0 1.5rem;
+}
+
+.game-header h1 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #f9b23d;
+	line-height: 49px;
+	margin-bottom: 0;
+}
+
+/* End Game-Header */
+
+/* Start Game-Content */
+
+.game-content {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 2rem 0;
+}
+
+.game-content__player1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: auto;
+}
+
+.game-content__username {
+	font-size: 24px;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	margin: auto;
+}
+
+.game-content__images {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-content__image {
+	width: 93%;
+	height: 70%;
+	padding: 20px;
+	background-color: transparent;
+	border: none;
+	border-radius: 30px;
+	overflow: hidden;
+	outline: none;
+	margin: 2rem 0.7rem 0;
+}
+
+.game-content__image img {
+	max-width: 80px;
+	max-height: 240px;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+.game-content__player1 .game-content__image:hover {
+	background: #c4c4c4;
+	cursor: pointer;
+}
+
+.game-content__computer .game-content__image:hover {
+	cursor: default;
+}
+
+.game-content__sign {
+	margin: 2rem auto;
+}
+
+.game-content__sign h1 {
+	font-size: 75px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	color: #bd0000;
+}
+
+.game-content__sign h1:nth-child(2),
+.game-content__sign h1:nth-child(3),
+.game-content__sign h1:nth-child(4) {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	max-width: 271.11px;
+	max-height: 166.93px;
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+	background-color: #4c9654;
+	color: #fff;
+	letter-spacing: 0.1em;
+	line-height: 52px;
+	border-radius: 10px;
+}
+
+.game-content__sign h1:nth-child(4) {
+	background-color: #035b0c;
+}
+
+.game-content__computer {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: auto;
+}
+
+.game-content__refresh {
+	max-width: 80px;
+	width: 100%;
+	margin: 3rem auto;
+}
+
+.game-content__refresh img:hover {
+	cursor: pointer;
+}
+
+/* End Game-Content */
