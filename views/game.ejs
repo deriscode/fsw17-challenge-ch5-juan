@@ -16,10 +16,10 @@
 
 <!-- Start Player Profile -->
 <section class="player-profile">
-	<a href="/game/edit-profile" class="player-profile__badge" title="EDIT">
+	<a href="#" class="player-profile__badge" title="EDIT">
 		<button type="button" class="btn btn-edit">
 			<i class="fas fa-edit text-center"></i>
-			<span class="text-center">Hi, <%= player %> </span>
+			<span class="text-center">Hi, <%= playerName %> </span>
 		</button>
 	</a>
 </section>
@@ -29,7 +29,7 @@
 <section class="game-content">
 	<!-- Start Game-Content Player 1 -->
 	<div class="game-content__player1">
-		<h1 class="game-content__username">PLAYER 1</h1>
+		<h1 class="game-content__username"><%= playerName %></h1>
 		<div class="game-content__images">
 			<button id="batu" class="game-content__image" type="button"><img src="/assets/batu.png" alt="Batu" class="img-fluid" /></button>
 			<button id="kertas" class="game-content__image" type="button">
@@ -45,7 +45,7 @@
 	<!-- Start Game-Content Sign -->
 	<div class="game-content__sign">
 		<h1>VS</h1>
-		<h1 style="display: none">PLAYER 1 WIN</h1>
+		<h1 style="display: none"><%= playerName %> WIN</h1>
 		<h1 style="display: none">COM WIN</h1>
 		<h1 style="display: none">DRAW</h1>
 	</div>

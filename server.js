@@ -19,20 +19,24 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
+// Rute untuk menampilkan halaman game
 app.get("/game", isLoggedIn, (req, res) => {
 	res.render("game.ejs", { headTitle: "Game" });
 });
 
+// Rute untuk log out
 app.post("/logout", (req, res) => {
 	res.cookie("jwt", "", { maxAge: 1 });
 	res.redirect("/login");
 });
 
+// Rute untuk menampilkan halaman log in
 app.get("/login", (req, res) => {
 	const { status } = req.query;
 	res.render("login.ejs", { headTitle: "Login", status });
 });
 
+// Rute untuk log in
 app.post("/login", (req, res) => {
 	const { email, password } = req.body;
 	const data = JSON.parse(fs.readFileSync("./data/players.json", "utf-8"));
@@ -63,10 +67,12 @@ app.post("/login", (req, res) => {
 	}
 });
 
+// Rute untuk menampilkan halaman mendaftar
 app.get("/register", (req, res) => {
 	res.render("register.ejs", { headTitle: "Register" });
 });
 
+// Rute untuk mendaftar
 app.post("/register", async (req, res) => {
 	const { username, email, password } = req.body;
 	const hashedPWD = await bcrypt.hash(password, 10);
@@ -77,10 +83,12 @@ app.post("/register", async (req, res) => {
 	res.redirect("/game");
 });
 
+// Rute untuk menampilkan halaman utama
 app.get("/", (req, res) => {
 	res.render("main.ejs", { headTitle: "Home" });
 });
 
+// Menjalankan server di port 7000
 const PORT = 7000;
 app.listen(PORT, () => {
 	console.log(`Server is running at port ${PORT}`);

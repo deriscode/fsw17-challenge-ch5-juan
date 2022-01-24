@@ -9,7 +9,9 @@ const isLoggedIn = (req, res, next) => {
 				res.locals.player = null;
 				res.redirect("/login");
 			} else {
-				res.locals.player = decodedToken.username;
+				res.locals.playerName = decodedToken.username;
+				res.locals.playerEmail = decodedToken.email;
+				res.locals.playerID = decodedToken.id;
 				next();
 			}
 		});
