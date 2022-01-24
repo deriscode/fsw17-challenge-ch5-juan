@@ -15,6 +15,10 @@ app.get("/login", (req, res) => {
 	res.render("login.ejs", { headTitle: "Login" });
 });
 
+app.get("/register", (req, res) => {
+	res.render("register.ejs", { headTitle: "Register" });
+});
+
 app.get("/", (req, res) => {
 	res.render("main.ejs", { headTitle: "Home" });
 });

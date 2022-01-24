@@ -12,12 +12,31 @@ a {
 }
 
 /* Start Login-Container */
+
 .login-container {
 	height: 100vh;
 	padding: 3rem 1rem;
 }
 
 /* End Login-Container */
+
+/* Start Regist-Container */
+
+.regist-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.regist-container .row {
+	align-self: center;
+}
+
+.regist-container h1 {
+	color: #632652;
+}
+
+/* End Regist-Container */
 
 /* Start Login-Regist Form */
 
@@ -69,6 +88,7 @@ a {
 	background-color: #ffeead;
 	border-radius: 3px;
 	padding: 1rem 2.2rem;
+	min-width: 50%;
 	width: 100%;
 	font-weight: bold;
 	color: #632652;
