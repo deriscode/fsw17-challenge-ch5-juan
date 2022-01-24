@@ -5,12 +5,14 @@
 		<div class="col-10 col-md-6 col-lg-4 order-2 order-md-1 my-3 my-lg-0">
 			<form action="" method="POST" class="login-regist-form">
 				<div class="form-floating mb-4">
-					<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+					<input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" />
 					<label for="floatingInput">Email address</label>
+					<% if (status === "emailnotfound") { %> <%- include("partial/email-not-found") %> <% } %>
 				</div>
 				<div class="form-floating">
-					<input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+					<input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" />
 					<label for="floatingPassword">Password</label>
+					<% if (status === "wrongpassword") { %> <%- include("partial/wrong-password") %> <% } %>
 				</div>
 				<div class="button-group my-4 d-flex flex-column flex-md-row justify-content-md-center">
 					<button type="submit" class="btn-confirm my-2 me-md-4">Login</button>

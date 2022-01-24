@@ -118,6 +118,11 @@ a {
 	color: #7900ff;
 }
 
+.alert-message {
+	color: #fc0a5f;
+	padding: 0.2rem;
+}
+
 /* End Login-Regist Form */
 
 /* Start Footer */

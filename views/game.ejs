@@ -4,7 +4,9 @@
 <header class="game-header">
 	<div class="row">
 		<div class="col-12 d-flex align-items-center py-3">
-			<a href="#"><</a>
+			<form action="/logout" method="POST">
+				<button type="submit" title="LOG OUT"><<br />LOG OUT</button>
+			</form>
 			<img src="assets/logo-game-suit.png" alt="Logo Game Suit" class="img-fluid" />
 			<h1>ROCK PAPER SCISSORS</h1>
 		</div>
@@ -12,18 +14,29 @@
 </header>
 <!-- End Game-Header -->
 
+<!-- Start Player Profile -->
+<section class="player-profile">
+	<a href="/game/edit-profile" class="player-profile__badge" title="EDIT">
+		<button type="button" class="btn btn-edit">
+			<i class="fas fa-edit text-center"></i>
+			<span class="text-center">Hi, <%= player %> </span>
+		</button>
+	</a>
+</section>
+<!-- End Player's Profile -->
+
 <!-- Start Game-Content -->
 <section class="game-content">
 	<!-- Start Game-Content Player 1 -->
 	<div class="game-content__player1">
 		<h1 class="game-content__username">PLAYER 1</h1>
 		<div class="game-content__images">
-			<button id="batu" class="game-content__image" type="button"><img src="assets/batu.png" alt="Batu" class="img-fluid" /></button>
+			<button id="batu" class="game-content__image" type="button"><img src="/assets/batu.png" alt="Batu" class="img-fluid" /></button>
 			<button id="kertas" class="game-content__image" type="button">
-				<img src="assets/kertas.png" alt="Kertas" class="img-fluid" />
+				<img src="/assets/kertas.png" alt="Kertas" class="img-fluid" />
 			</button>
 			<button id="gunting" class="game-content__image" type="button">
-				<img src="assets/gunting.png" alt="Gunting" class="img-fluid" />
+				<img src="/assets/gunting.png" alt="Gunting" class="img-fluid" />
 			</button>
 		</div>
 	</div>
@@ -42,12 +55,12 @@
 	<div class="game-content__computer">
 		<h1 class="game-content__username">COM</h1>
 		<div class="game-content__images">
-			<button class="game-content__image pilihan-com" type="button"><img src="assets/batu.png" alt="Batu" class="img-fluid" /></button>
+			<button class="game-content__image pilihan-com" type="button"><img src="/assets/batu.png" alt="Batu" class="img-fluid" /></button>
 			<button class="game-content__image pilihan-com" type="button">
-				<img src="assets/kertas.png" alt="Kertas" class="img-fluid" />
+				<img src="/assets/kertas.png" alt="Kertas" class="img-fluid" />
 			</button>
 			<button class="game-content__image pilihan-com" type="button">
-				<img src="assets/gunting.png" alt="Gunting" class="img-fluid" />
+				<img src="/assets/gunting.png" alt="Gunting" class="img-fluid" />
 			</button>
 		</div>
 	</div>

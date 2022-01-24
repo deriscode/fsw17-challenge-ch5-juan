@@ -8,6 +8,10 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* Start Game-Header */
 
 .game-header {
@@ -15,11 +19,12 @@ body {
 	margin: 0 auto;
 }
 
-.game-header a {
-	text-decoration: none;
-	font-size: 72px;
+.game-header button {
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: #724c21;
+	border: none;
+	background: transparent;
 }
 
 .game-header img {
@@ -35,6 +40,44 @@ body {
 }
 
 /* End Game-Header */
+
+/* Start Player-Profile */
+
+.player-profile {
+	display: grid;
+	width: 100%;
+	justify-content: center;
+}
+
+.player-profile__badge .btn-edit {
+	padding: 0 15px 0 0;
+	border-radius: 2rem;
+	background-color: #9a6f59;
+}
+
+.player-profile__badge .btn-edit:focus {
+	border: 3px solid #88c59b !important;
+	box-shadow: 0 0 15px #88c59b !important;
+}
+
+.player-profile__badge .btn-edit:hover {
+	background-color: #589077;
+}
+
+.player-profile__badge .fa-edit {
+	font-size: 1.5rem;
+	background-color: #f9b23d;
+	color: white;
+	border-radius: 6em;
+	padding: 0.5em;
+	margin-right: 5px;
+}
+
+.player-profile__badge span {
+	color: #f9b23d;
+}
+
+/* End Player-Profile */
 
 /* Start Game-Content */
 
